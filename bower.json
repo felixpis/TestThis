@@ -1,0 +1,20 @@
+{
+  "name": "EmptyTestMap",
+  "version": "0.0.0",
+  "authors": [
+    "felixp <felix.piskunov@cellebrite.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-leaflet": "~0.7.11",
+    "bootstrap": "~3.3.4",
+    "Leaflet.awesome-markers": "~2.0.2"
+  }
+}

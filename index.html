@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="leafTest">
+<head lang="en">
+    <link rel="stylesheet" href="assets/index.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css"/>
+
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-leaflet/dist/angular-leaflet-directive.js"></script>
+    <script src="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+
+    <script src="src/app.js"></script>
+    <script src="src/actions/actions-controller.js"></script>
+    <script src="src/actions/actions-directive.js"></script>
+
+</head>
+<body ng-controller="SimpleMapController as vm">
+    <leaflet id="map"
+             defaults="vm.defaults"
+             center="vm.center"
+             markers="vm.markers"
+             paths="vm.paths"></leaflet>
+
+</body>
+</html>
