@@ -1,0 +1,19 @@
+<div>
+    <h4>{{vm.markerName}}</h4>
+    <div ng-hide="vm.SelectActionMode">
+        <button class="btn btn-primary" ng-click="vm.SetSendTo()">
+            <i class="fa fa-location-arrow"></i>
+            Send to...
+        </button>
+        <button class="btn btn-primary">
+            <i class="fa fa-send-o"></i>
+            Send message
+        </button>
+    </div>
+    <div ng-show="vm.SelectActionMode">
+        Please select point...
+        <button class="btn btn-default" ng-click="vm.Cancel()">
+            Cancel
+        </button>
+    </div>
+</div>
